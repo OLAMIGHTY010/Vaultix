@@ -23,6 +23,7 @@ contractmeta!(
     key = "repository",
     val = "https://github.com/StayLitCodes/Vaultix"
 );
+contractmeta!(key = "build_commit", val = env!("VAULTIX_BUILD_COMMIT"));
 
 impl VaultixEscrow {
     /// Secure contract upgrade function (Admin Proxy).
